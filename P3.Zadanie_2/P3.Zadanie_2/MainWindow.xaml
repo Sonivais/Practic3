@@ -1,0 +1,28 @@
+﻿<Window x:Class="P3.Zadanie_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:P3.Zadanie_2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="110*"/>
+            <RowDefinition Height="110*"/>
+            <RowDefinition Height="90*"/>
+            <RowDefinition Height="100*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="107*"/>
+            <ColumnDefinition Width="91*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="TextBlock1" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center" Width="289"  Margin="68,42,71,36"><Run Text="Введите первое "/><Run Text="число"/></TextBlock>
+        <TextBlock Name="TextBlock2" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center" Text="Введите второе число" Height="50" Margin="33,23,71,29" Grid.Row="1"></TextBlock>
+        <TextBlock Name="TextBlock3" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center" Text="Ответ:" Width="340" Height="45" Margin="50,23,38,21" Grid.Row="2"></TextBlock>
+        <TextBox Name="TextBox1" FontSize="25" Grid.Column="1" Margin="20,15,20,15"></TextBox>
+        <TextBox Name="Answer" FontSize="25" Grid.Column="1" Margin="20,15,20,15" Grid.Row="2"></TextBox>
+        <TextBox Name="TextBox2" Grid.Column="1" FontSize="25" Margin="20,15,20,15" Grid.Row="1"></TextBox>
+        <Button FontSize="25" Click="Button_Click" Grid.Row="3" Grid.ColumnSpan="2" Margin="20,20,20,20">Вычислить</Button>
+    </Grid>
+</Window>
